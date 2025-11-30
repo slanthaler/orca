@@ -1,0 +1,20 @@
+defaults:
+  # syntax: /folder_name@key_name : file_name
+  - /model@model: linear         # Load conf/model/linear.yaml into cfg.pipeline.model
+  - /processing@processing: raw
+  - _self_
+
+type: torch
+
+# Hyperparameters specific to Torch
+training:
+  batch_size: 64
+  epochs: 100
+  learning_rate: 0.001
+  dropout: 0.3
+  optimizer: adam     # Used in build_trainer
+  loss: mse           # Used in build_trainer
+  
+  # Used inside SupervisedTrainer
+  log_steps: true     
+  log_interval: 10

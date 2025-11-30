@@ -1,0 +1,8 @@
+defaults:
+  - pipeline: torch     # Default to Torch
+  - evaluation: default
+  - _self_              # Required for Hydra 1.1+
+
+# Global settings
+seed: 2020121620230417
+wandb_project: "experiment-v0"

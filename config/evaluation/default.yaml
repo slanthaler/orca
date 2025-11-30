@@ -1,0 +1,6 @@
+# Metrics to compute
+metrics:
+  - mse
+  - mae
+  - rmse
+  - r2

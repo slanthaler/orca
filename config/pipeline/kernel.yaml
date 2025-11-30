@@ -1,0 +1,10 @@
+defaults:
+  - /model@model: svm
+  - /processing@processing: raw
+  - _self_
+
+type: kernel
+
+# Kernel methods might not have "epochs", so the schema changes here freely
+execution:
+  n_jobs: -1
